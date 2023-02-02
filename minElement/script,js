@@ -1,0 +1,12 @@
+function minElement(table) {
+    var min = table[0];
+    for (var i = 0; i < table.length - 1; i++) {
+        if (table[i] > table[i + 1] && table[i + 1] < min) {
+            min = table[i + 1];
+        }
+        if (table[i] < min) {
+            min = table[i];
+        }
+    }
+    return min
+}
