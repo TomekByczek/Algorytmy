@@ -7,7 +7,9 @@ function powerFull(base, index) {
         result = base;
     }
     if (index < 0) {
-        base = 1 / base; result = base; index = index * -1;
+        base = 1 / base;
+        result = base;
+        index = index * -1;
     }
     for (var i = 0; i < index - 1; i++) {
         result = result * base
