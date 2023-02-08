@@ -1,9 +1,8 @@
-function addStringChar(number) {
-    var num = []
-    num.push(number + '')
-    var add = 0
+function sumDigits(number) {
+    var num = number + '';
+    var sum = 0;
     for (var i = 0; i < num.length; i++) {
-        add = add + (num.charAt(i))
+        sum = sum + +(num.charAt(i))
     }
-    return add
+    return sum
 }
