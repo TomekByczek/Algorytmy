@@ -1,7 +1,20 @@
-function sortingTable(table) {
-    for (var i = 0; i < table.length; i++) {
-        if (table[i] > table[i + 1]) {
-            table[table.length - 1] = table[i]
+function sortTable(table) {
+    do {
+        var swap = false;
+        for (var i = 0; i < table.length - 1; i++) {
+            if (table[i] > table[i + 1]) {
+                var a = table[i];
+                table[i] = table[i + 1];
+                table[i + 1] = a;
+                swap = true;
+            }
+            else {
+                continue;
+            }
         }
-    } return table
+
+    } while (swap === true)
+
+
+    return table;
 } 
