@@ -15,9 +15,6 @@ function sortInsertion(myTable) {
                 insert = true;
                 break
             }
-
-
-
         }
         if (insert != true) {
             tableSorting.push(temp);
