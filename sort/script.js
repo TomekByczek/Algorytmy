@@ -17,7 +17,7 @@ function sortTable(table) {
             //}
         }
 
-    } while (swap === true)
+    } while (swap === true);
 
 
     return table;
